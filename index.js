@@ -1,6 +1,8 @@
 var player1=prompt("Write name of Player 1");
 var player2=prompt("Write name of Player 2");
 function play(){
+  document.querySelector("#p1").innerHTML=player1;
+  document.querySelector("#p2").innerHTML=player2;
 var r1=Math.floor(Math.random()*6)+1;
 var image1="images/dice"+r1+".png";
 document.querySelectorAll("img")[0].setAttribute("src",image1);
